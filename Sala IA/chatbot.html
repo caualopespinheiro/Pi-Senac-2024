@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para a fonte de ícones do Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Script JavaScript deferido para o fim do carregamento da página -->
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Título principal com efeito de digitação -->
+    <h1>Estudar é <span></span></h1>
+
+    <!-- Contêiner do chatbot -->
+    <div class="chatbot">
+        <header>
+            <h2>Sala IA</h2>
+        </header>
+        <!-- Caixa de chat -->
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Olá <br>Como eu posso te ajudar ?</p>
+            </li>
+        </ul>
+        <!-- Entrada de mensagem do chat -->
+        <div class="chat-input">
+            <textarea placeholder="Mensagem" required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+
+    <!-- Contêiner da calculadora, inicialmente oculto -->
+    <div id="calculatorContainer" style="display: none;">
+        <div class="container">
+            <!-- Visor da calculadora -->
+            <input type="text" class="display" />
+            <!-- Botões da calculadora -->
+            <div class="buttons">
+                <button class="operator" data-value="AC">AC</button>
+                <button class="operator" data-value="DEL">DEL</button>
+                <button class="operator" data-value="%">%</button>
+                <button class="operator" data-value="/">/</button>
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                <button class="operator" data-value="*">*</button>
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                <button class="operator" data-value="-">-</button>
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <button class="operator" data-value="+">+</button>
+                <button data-value="0">0</button>
+                <button data-value="00">00</button>
+                <button data-value=".">.</button>
+                <button class="operator" data-value="=">=</button>
+            </div>
+        </div>
+    </div>
+    <!-- Botão para alternar a visibilidade da calculadora -->
+    <button id="toggleCalculator" class="calc">Abrir Calculadora</button>
+</body>
+</html>

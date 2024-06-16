@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags para configuração -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Título da página -->
+  <title>Captcha Generator</title>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="captcha.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>Captcha</header>
+    <!-- Campo para exibir o captcha -->
+    <div class="input_field captch_box">
+      <!-- Campo de texto desabilitado para exibir o captcha -->
+      <input type="text" value="" disabled />
+      <!-- Botão para atualizar o captcha -->
+      <button class="refresh_button">
+        <i class="fa-solid fa-rotate-right"></i> <!-- Ícone de rotação -->
+      </button>
+    </div>
+    <!-- Campo para entrada do usuário -->
+    <div class="input_field captch_input">
+      <!-- Campo de texto para entrada do captcha -->
+      <input type="text" placeholder="Escreva o captcha" />
+    </div>
+    <!-- Mensagem de orientação -->
+    <div class="message">Escreva o captcha corretamente</div>
+    <!-- Campo para o botão de envio do captcha -->
+    <div class="input_field button disabled">
+      <!-- Botão de envio -->
+      <button>Enviar Captcha</button>
+    </div>
+  </div>
+  <!-- Script JavaScript -->
+  <script src="captcha.js"></script>
+</body>
+</html>
